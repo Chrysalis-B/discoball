@@ -1,0 +1,18 @@
+
+<h2>Kindly let us know a little bit more about yourself</h2>
+{{#error}}
+<div class="error">
+    <p class="error">Oops! Something went wrong. Please try again</p>
+</div>
+{{/error}}
+<form method="POST">
+    <div class="form-container">
+        <input class="age" type="text" name="age" placeholder="Age"></input>
+        <input class="city" type="text" name="city" placeholder="City"></input>
+        <input class="url" type="url" name="url" placeholder="Homepage"></input>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}"></input>
+    </div>
+    <div class="button-container">
+        <button class="button">Continue</button>
+    <div>
+</form>

@@ -1,0 +1,15 @@
+<img class="preload first" src="assets/disco-ball.svg">
+<img class="preload second" src="assets/party.svg">
+<h2>Thank you for supporting this cause!</h1>
+<div class="signature-image">
+    <img src="{{signature}}">
+</div>
+<p><a href="/signers">See all {{count}} people who have signed the petition so far</a></p>
+<p><a href="/edit_profile">Edit your profile</a></p>
+<form method="POST">
+    <input type="hidden" name="sig" value="">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <p><button class="deletesig" type="submit" name="button">Delete signature</button></p>
+</form>
+<p><a href="/logout">Log out</a></p>
+<div class="credit">{{>credit}}</div>

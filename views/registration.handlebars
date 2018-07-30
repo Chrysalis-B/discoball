@@ -1,0 +1,20 @@
+<h3>Can you believe there is no emoji for a disco ball?!</h3>
+<h3>By signing this petition you can help make it happen!</h3>
+<h4>Register now to take part in this important cause!</h4>
+{{#error}}
+<div class="error">
+    <p>Oops! Something went wrong :( Please try again</p>
+</div>
+{{/error}}
+<form method="POST">
+    <div class="form-container">
+        <input  type="text" name="first" placeholder="first name" required></input>
+        <input  type="text" name="last" placeholder="last name" required></input>
+        <input  type="email" name="email" placeholder="e-mail address" required></input>
+        <input  type="password" name="password" placeholder="password" required></input>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}"></input>
+    </div>
+    <div class="button-container">
+        <button class="button">Register</button>
+    <div>
+</form>

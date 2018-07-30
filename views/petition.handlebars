@@ -1,0 +1,20 @@
+
+<h2>Sign now!</h2>
+{{#error}}
+<div class="error">
+    <p>Oops! Something went wrong :( Please try again</p>
+</div>
+{{/error}}
+<form method="POST">
+    <p class="sign-caption">{{first}} {{last}}</p>
+    <div class="form-container">
+        <input type="hidden" name="signature"></input>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}"></input>
+    </div>
+    <canvas id="canv" width="500" height="100"></canvas>
+    <p class="sign-caption">Sign your name here</p>
+    <p class="sign-caption">If at first you don't succeed, <a id="clear" href="#">try again</a></p>
+    <div class="button-container">
+        <button class="button">Submit</button>
+    <div>
+</form>

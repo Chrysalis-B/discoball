@@ -1,0 +1,17 @@
+
+<h2>Please log in below</h2>
+{{#error}}
+<div class="error">
+    <p>Oops! Something went wrong :( Please try again</p>
+</div>
+{{/error}}
+<form method="POST">
+    <div class="form-container">
+        <input class="email" type="email" name="email" placeholder="e-mail address" required></input>
+        <input class="password" type="password" name="password" placeholder="password" required></input>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}"></input>
+    </div>
+    <div class="button-container">
+        <button class="button">Log in</button>
+    <div>
+</form>

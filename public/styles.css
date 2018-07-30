@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+}
+
+canvas {
+    border: 2px dotted black;
+    display: block;
+    margin: 0 auto;
+}
+
+.signature-image {
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    border: 2px dotted black;
+}
+
+.background {
+    background-color: #f6bce1;
+    background: linear-gradient(to bottom right, #f6bce1, #b1f3ec);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    min-height: 600px;
+}
+
+.container {
+    padding: 15px;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto 0 auto;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+}
+
+.deletesig {
+    background: none;
+    color: fuchsia;
+    border: none;
+    padding: 0;
+    font: inherit;
+    border-bottom: 1px solid fuchsia;
+    cursor: pointer;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    margin: 15px;
+    color: #5c5d67;
+}
+
+h1 {
+    /* text-transform: uppercase; */
+    color: fuchsia;
+    text-shadow: 2px 2px #b1f3ec;
+    font-size: 65px;
+    font-family: "League Script", cursive;
+}
+
+.credit {
+    font-size: 9px;
+    padding-top: 30px;
+}
+
+.emojis {
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.disco-balls {
+    position: relative;
+    width: 245px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.disco-ball {
+    width: 80px;
+    height: 80px;
+}
+
+.error p {
+    color: fuchsia;
+    text-transform: uppercase;
+    text-decoration: overline underline fuchsia;
+}
+
+a {
+    color: fuchsia;
+}
+
+.sign-caption {
+    margin-top: 2px;
+    font-style: italic;
+}
+
+.button-container {
+    margin: 0 auto;
+    width: 100px;
+    padding: 20px;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    font-family: "Raleway", sans-serif;
+    color: fuchsia;
+    text-shadow: 2px 2px #b1f3ec;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.first {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -500px;
+    animation-name: move;
+    animation-duration: 5s;
+}
+
+.second {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -500px;
+    left: 450px;
+    animation-name: move;
+    animation-duration: 7s;
+}
+
+@keyframes move {
+    0% {
+        top: -500px;
+    }
+    50% {
+        top: -85px;
+    }
+    100% {
+        top: -500px;
+    }
+}

@@ -1,0 +1,22 @@
+<div id="edit-profile">
+    {{#error}}
+    <div class="error">
+        <p>Oops! Something went wrong :( Please try again</p>
+    </div>
+    {{/error}}
+    <form method="POST">
+        <div class="form-container">
+            <input type="text" name="first"value="{{userInfo.first}}"></input>
+            <input type="text" name="last" value="{{userInfo.last}}"></input>
+            <input type="email" name="email"value="{{userInfo.email}}"></input>
+            <input type="password" name="password" placeholder="password"></input>
+            <input type="text" name="age" value="{{userInfo.age}}" placeholder="Age"></input>
+            <input type="text" name="city" value="{{userInfo.city}}" placeholder="City"></input>
+            <input type="url" name="url" value="{{userInfo.url}}" placeholder="Homepage"></input>
+            <input type="hidden" name="_csrf" value="{{csrfToken}}"></input>
+        </div>
+        <div class="button-container">
+            <button class="button" type="submit">Update</button>
+        <div>
+    </form>
+</div>
